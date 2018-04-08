@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task21</title>
+	<style>
+		.result div{
+			width:50px;
+			height: 50px;
+			color:#fff;
+			float: left;
+			background: #009c4c;
+			margin: 10px;
+			line-height: 50px;
+			text-align: center;
+			font-weight: bold;
+		}
+		.result:after{
+			clear:both;
+			height: 0;
+			display: block;
+			content:'';
+		}
+		.form{
+			margin-left: 10px;
+			margin-bottom: 10px;	
+		}
+		.search{
+			margin-left: 60px;
+		}
+	</style>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+	<div class="tag-input">
+		<div class ="form">	
+			<input class ="input" type="text" placeholder="填写tag">
+		</div>
+		<div class="result"></div>
+	</div>
+	<div class="hobby-input">
+		<div class ="form">	
+			<textarea class="input" name="information" id="" cols="30" rows="3" placeholder="填写兴趣爱好（使用空格或逗号分割）"></textarea>
+			<button class="confirm">确认</button>
+		</div>
+		<div class="result"></div>
+	</div>	
+	<script src="JS/task20.js"></script>
+</body>
+</html>

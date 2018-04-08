@@ -1,0 +1,67 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+.item{
+  line-height: 200px;
+  text-align: center;
+  width:400px;
+  height:200px;
+  background:#ccc;
+  position:relative;
+  overflow:hidden;
+}
+.decoration1{
+  position: absolute;
+  top:-50px;
+  left:-50px;
+  width:100px;
+  height:100px;
+  background:#fc0;
+  border-radius:50px;
+}
+.decoration2{
+  position: absolute;
+  bottom:-50px;
+  right:-50px;
+  width:100px;
+  height:100px;
+  background:#fc0;
+  border-radius:50px;
+  
+}
+/* 已知宽高 */
+.container1{
+  height:500px;
+  border:1px solid #ccc;
+  position: relative;
+}
+.center1{
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin:-100px 0 0 -200px;
+}
+/* 未知宽高 */
+.container2{
+  height:500px;
+  border:1px solid #ccc;
+  position: relative;
+}
+.center2{
+  position:absolute;
+  top:50%;
+  left:50%;
+   transform: translate(-50%, -50%);
+}
+/* flex */
+.container3{
+  height:500px;
+  border:1px solid #ccc;
+  position: relative;
+  display: flex; 
+   justify-content: center;
+   align-items: center;
+}
+}

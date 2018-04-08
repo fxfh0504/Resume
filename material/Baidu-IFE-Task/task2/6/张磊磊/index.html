@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.result div{
+			width:50px;
+			height: 50px;
+			color:#fff;
+			float: left;
+			background: #009c4c;
+			margin: 10px;
+			line-height: 50px;
+			text-align: center;
+		}
+		.form{
+			margin-left: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class ="form">	
+		<label ><input type="number" placeholder="请输入数子"></label>
+		<button class="leftIn">左侧入</button><button class="rightIn">右侧入</button>
+		<button class="leftOut">左侧出</button><button class="rightOut">右侧出</button>
+	</div>
+	<div class="result"></div>
+		
+
+
+	<script>
+		var leftIn   = document.querySelector('.leftIn'),
+			rightIn  = document.querySelector('.rightIn'),
+			leftOut  = document.querySelector('.leftOut'),
+			rightOut = document.querySelector('.rightOut'),
+			result   = document.querySelector('.result'),
+			input 	 = document.querySelector('input'),
+			listArr  = [];//绘制的数组
+		
+		/*绘制图像函数
+		 ***/
+		function render(){
+			var str = "";
+			for (var i = 0; i < listArr.length; i++) {
+				str += '<div>' + listArr[i] + '</div>'; 
+			}
+			result.innerHTML = str ;
+		}
+		/*操作数组&判断
+		 ***/
+		function leftInEvent(){
+			// 判断输入
+			if (input.value == ""){
+				alert("请输入数字");
+				return flase;
+			}
+			listArr.unshift(input.value);
+			//操作数组 
+		}
+		function rightInEvent(){
+			if (input.value ==""){
+				alert("请输入数字");
+				return flase;
+			}
+			listArr.push(input.value);// 判断输入
+			//操作数组 
+		}
+		function leftOutEvent(){
+			//删除数组左侧第一个元素
+			listArr.splice(0,1);
+		}
+		function rightOutEvent(){
+			listArr.splice(listArr.length-1,1);//删除数组右侧第一个元素
+		}
+		/*绑定事件
+		 ***/
+		function initLeftIn(){
+			leftIn.addEventListener('click',function(){
+				leftInEvent();
+				render();
+			});
+		}
+		function initRightIn(){
+			rightIn.addEventListener('click',function(){
+				rightInEvent();
+				render();
+			});
+			
+		}
+		function initLeftOut(){
+			leftOut.addEventListener('click',function(){
+				var first = listArr[0];
+				leftOutEvent();
+				render();
+				alert(first);
+			})
+		}
+		function initRightOut(){
+			rightOut.addEventListener('click',function(){
+				var last = listArr[listArr.length-1];
+				rightOutEvent();
+				render();
+				alert(last);
+			})
+		}
+		function indexOF(ele){
+	       var parent = ele.parentElement,
+	            siblings = parent.children;
+	        for(var i=0; i<siblings.length; i++){
+	            if(ele === siblings[i]) return i;
+       		}
+        }
+		function deleteEle(){
+			var deleteDiv = document.querySelector('.result');
+			deleteDiv.addEventListener('click',function(e){
+			 var target    = e.target;
+			 console.log(target);
+			 var deleteNum = indexOF(target),
+			 	 deleteAlert = listArr[deleteNum];
+			 console.log(deleteNum);
+			 listArr.splice(deleteNum,1);
+			 render();
+			 alert(deleteAlert );
+			})
+		}
+		function init(){
+			initLeftIn();
+			initRightIn();
+			initLeftOut();
+			initRightOut();
+			deleteEle();
+		}
+		init();
+	</script>
+</body>
+</html>

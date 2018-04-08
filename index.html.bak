@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>简历</title>
+	<link rel="stylesheet" href="./style/reset.css">
+	<link rel="stylesheet" href="./style/index.css">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1469886482_0448592.css">
+</head>
+<body>
+	<div class="wapper  clear-float">
+		<div class="triangle-top"></div>
+		<div class="triangle-bottom"></div>
+		<h1 class="title">简 历</h1>
+		<h2 class="name">甘 世 宇</h2>
+		<h3 class="job">JAVA开发工程师</h3>
+		<div class="left-bar-box">
+			<ul class="left-bar">
+				<li>
+					<h1>联系方式</h1>
+					<div class="bottom-line"></div>
+						<dl class="contact">
+							<dt>地址</dt>
+							<dd>宝山区德都路269弄6号201室</dd>
+						</dl>
+						<dl class="contact">
+							<dt>联系电话</dt>
+							<dd>18616655751</dd>
+						</dl>
+						<dl class="contact">
+							<dt>邮箱</dt>
+							<dd>18616655751@qq.com</dd>
+						</dl>
+				</li>
+				<li>
+					<h1>主要技能</h1>
+					<div class="bottom-line"></div>
+					<dl class="skill">
+						<dt>JAVA</dt>
+						<dd>
+							<div class="html"></div>
+						</dd>
+					</dl>
+					<dl class="skill">
+						<dt>分布式</dt>
+						<dd>
+							<div class="css"></div>
+						</dd>
+					</dl>
+					<dl class="skill">
+						<dt>微服务</dt>
+						<dd>
+							<div class="js"></div>
+						</dd>
+					</dl>
+					<dl class="skill">
+						<dt>DevOps</dt>
+						<dd>
+							<div class="node"></div>
+						</dd>
+					</dl>
+
+
+				</li>
+				<li>
+					<h1>个人介绍</h1>
+					<div class="bottom-line"></div>
+					<ul class="self-intrduce">
+						<li>有过出国交流学习经历、乐于交友</li>
+						<li>轻度强迫症，对代码质量略有洁癖</li>
+						<li>对新技术态度激进，敢于尝试</li>
+						<li>善于与上下流沟通,性格随和</li>
+					</ul>
+				</li>
+				<li>
+					<h1>兴趣爱好</h1>
+					<div class="bottom-line"></div>
+					<ul class="hobby">
+						<li>电影</li>
+						<li>吉他</li>
+						<li>旅游</li>
+						<li>看书</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="right-bar-box">
+			<ul class="right-bar">
+				<li>
+					<h1>技能清单</h1>
+					<div class="bottom-line"></div>
+					<ul class="skill-others">
+						<li>
+							熟练JAVA开发，掌握JVM虚拟机的概念原理和一些调优方法，熟读collection框架源码，理解其中原理以及数据结构。
+							熟悉并发容器和线程池。
+						</li>
+						<li>
+							熟练使用spring全家桶，阅读过spring源码,了解框架实现原理，并有多个大型项目的开发经验；
+						</li>
+						<li>
+							熟练使用dubbo框架开发微服务,熟悉zookeeper分布式协调服务；使用zuul开发过微服务网关
+						</li>
+						<li>
+							掌握使用Jenkins进行持续集成、使用docker进行持续交付。使用过docker搭建zabbix进行服务器监控。
+							使用过美团的cat进行分布式调用链追踪。
+						</li>
+						<li>
+							熟悉redis等nosql数据库，或将其作为服务的缓存。熟悉传统消息中间件如rabbitMQ,对kafka有些许了解。
+							熟悉常见的关系型数据库如mysql。
+						</li>
+						<li>
+							对一些新技术栈进行过尝试，并能简单使用：springcloud、grpc等
+						</li>
+					</ul>
+				</li>
+
+				<li class="split-line">
+					<h1>工作经历</h1>
+					<div class="bottom-line"></div>
+					<ul class="work">
+						<li class="clear-float">
+							<div class="year">2017.7-至今</div>
+							<dl>
+								<dt>尚诚消费金融 <span>研发工程师</span></dt>
+								<dd>公司渠道端和框架组项目攻坚手，负责渠道端项目架构搭建，后期兼任公司运维团队负责人之一。</dd>
+							</dl>
+						</li>
+						<li class="clear-float">
+							<div class="year">2015.7-2017.6</div>
+							<dl>
+								<dt>万达信息<span>java开发工程师</span></dt>
+								<dd>
+									负责项目需求调研、系统概要设计、以及开发相关功能模块。对部分老项目进行优化和重构。
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</li>
+				<li class="split-line">
+					<h1>主要项目经历</h1>
+					<div class="bottom-line"></div>
+					<ul class="project">
+						<li>
+							<h1>APP的前置服务以及网关搭建</h1>
+							<ul class="project-detail">
+								<li><span>项目描述：</span>作为公司APP项目入口的重要模块，除了对外暴露封装过的核心服务以外
+								还提供了分布式任务调度和消息通知等功能</li>
+								<li><span>担任角色：</span>负责项目架构和总体开发，并且带领一名同事为其安排任务</li>
+								<li><span>技术栈：</span>Zuul、dubbo、springboot、elastic-job、mybatis、rabbitMQ</li>
+							</ul>
+						</li>
+						<li>
+							<h1>统一密钥管理服务</h1>
+							<ul class="project-detail">
+								<li><span>项目描述：</span>	为了统一公司内部的秘钥使用与管理，开发了一个统一的秘钥管理系统，目前提供
+								页面申请秘钥（支持RSA、AES）、白名单管理，开放凭证换秘钥的微服务 针对缓存雪崩和缓存击穿做了防护策略</li>
+								<li><span>担任角色：</span>与架构师协同一起负责项目架构设计和总体开发</li>
+								<li><span>技术栈：</span>dubbo、redis、zookeeper、mybatis、springboot</li>
+							</ul>
+						</li>
+						<li>
+							<h1>运维与框架支持</h1>
+							<ul class="project-detail">
+								<li><span>项目描述：</span>	与架构师协同一起负责内部各环境的Jenkins搭建与配置，结合docker进行CI/CD，
+								封装美团的cat插件、协助开发人员接入cat调用链追踪，对生产问题提供支持和追踪</li>
+								<li><span>担任角色：</span>在架构师指导下进行开发和搭建 </li>
+								<li><span>技术栈：</span>cat、Jenkins、docker</li>
+							</ul>
+						</li>
+						<li>
+							<h1>信贷核心CPS系统</h1>
+							<ul class="project-detail">
+								<li><span>项目描述：</span>贷款的核心服务，处理借据查询、用信、额度、还款等关键服务。
+								此外还包含：利息计提、账单日结转、批量扣款、记账等批量任务。为缓解数据库压力进行了分表分库</li>
+								<li><span>担任角色：</span>批量部分参与共同开发、部分联机交易接口独立开发</li>
+								<li><span>技术栈：</span>dubbo、redis、Spring-Batch、mybatis、sharding-jdbc</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="split-line">
+					<h1>社交</h1>
+					<div class="bottom-line"></div>
+					<ul class="social">
+						<li><a href="https://github.com/fxfh0504" target="_Blank"><i class="iconfont icon-socialgithub"></i>Github</a></li>
+						<li class="wechat"><a href="javascript:void(0)"><i class="iconfont icon-weixin"></i>Wechat</a>
+						<div class="qr-code"><img src="img/qr-code.png" height="382" width="380" alt=""></div>
+						</li>
+					</ul>
+				</li>
+				<li class="split-line">
+					<h1>教育经历</h1>
+					<div class="bottom-line"></div>
+					<ul class="edu">
+						<li class="clear-float">
+							<div class="year">2011-2015</div>
+							<dl>
+								<dt>上海工程技术大学</dt>
+								<dd>电子信息工程</dd>
+							</dl>
+						</li>
+						
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
